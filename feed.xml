@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[抖音运营手册（运营实践笔记）]]></title>
+        <description><![CDATA[抖音运营知识汇总，短视频制作技巧，运营实践]]></description>
+        <link>https://www.lijiaocn.com/oper/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 24 Aug 2019 06:00:30 GMT</lastBuildDate>
+        <atom:link href="https://www.lijiaocn.com/oper/feed.xml" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[李佶澳]]></author>
+        <item>
+            <title><![CDATA[小鸟笔记说明]]></title>
+            <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
+            <link>https://www.lijiaocn.com/oper/</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/oper/</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+    </channel>
+</rss>

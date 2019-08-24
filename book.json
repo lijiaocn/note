@@ -18,11 +18,11 @@
 			"className": "atoc"
 		},
 		"rss": {
-			"title": "抖音运营手册（运营实践笔记）",
-			"description": "抖音运营知识汇总，短视频制作技巧，运营实践",
+			"title": "小鸟笔记，实用干货手册",
+			"description": "小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。",
 			"author": "李佶澳",
-			"site_url": "https://www.lijiaocn.com/oper/",
-			"feed_url": "https://www.lijiaocn.com/oper/feed.xml"
+			"site_url": "https://www.lijiaocn.com/note/",
+			"feed_url": "https://www.lijiaocn.com/note/feed.xml"
 		}
 	}
 }

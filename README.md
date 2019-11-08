@@ -18,6 +18,10 @@
 <div style="text-align:left"><p>运营手法技巧情报手册，耗费大量时间从各处搜集的运营技巧和赚钱情报，超级干货，不轻易示人。</p></div>
 </div>
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
+<a href="https://www.lijiaocn.com/book/" title="小鸟笔记之读书笔记"><h2>读书笔记</h2></a>
+<div style="text-align:left"><p>投资理财等各个门类的经典书籍和系列文章的深度阅读笔记，精华内容摘抄留存，个人阅读感悟。</p></div>
+</div>
+<div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
 <a href="https://www.lijiaocn.com/shuiku/" title="小鸟笔记之水库文集"><h2>水库文集</h2></a>
 <div style="text-align:left"><p>水库论坛创始人欧成效（俗称“欧神”）的全部精华文章，按照发布时间排序，欧成效亲手校对的文章底稿（包括被投诉删除的文章）</p></div>
 </div>

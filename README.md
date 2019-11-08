@@ -27,3 +27,5 @@
 
 * [Nginx 社区版的官方文档：nginx.org](http://nginx.org/)
 * [Nginx 商业版的官方文档：nginx.com](https://www.nginx.com/)
+* [官网：OpenResty](https://openresty.org/en/)
+* [项目：lua-nginx-module](https://github.com/openresty/lua-nginx-module)

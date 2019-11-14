@@ -33,3 +33,4 @@
 * [Nginx 商业版的官方文档：nginx.com](https://www.nginx.com/)
 * [官网：OpenResty](https://openresty.org/en/)
 * [项目：lua-nginx-module](https://github.com/openresty/lua-nginx-module)
+* [kubernetes ingress-nginx](https://kubernetes.github.io/ingress-nginx/)

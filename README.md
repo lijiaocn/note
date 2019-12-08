@@ -18,7 +18,7 @@
 <div style="text-align:left"><p>运营手法技巧情报手册，耗费大量时间从各处搜集的运营技巧和赚钱情报，超级干货，不轻易示人。</p></div>
 </div>
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
-<a href="https://www.lijiaocn.com/book/" title="小鸟笔记之读书笔记"><h2>读书笔记</h2></a>
+<a href="https://www.lijiaocn.com/book/" title="小鸟笔记之阅读笔记"><h2>阅读笔记</h2></a>
 <div style="text-align:left"><p>投资理财等各个门类的经典书籍和系列文章的深度阅读笔记，精华内容摘抄留存，个人阅读感悟。</p></div>
 </div>
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">

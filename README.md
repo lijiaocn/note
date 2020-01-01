@@ -1,8 +1,8 @@
-# 小鸟笔记说明
+# 笔记说明 by 李佶澳
 
 小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。
 
-点击标题进入（持续完善中），**记住网址：[www.lijiaocn.com](https://www.lijiaocn.com)**
+点击标题进入（持续完善中），**记住网址：[www.lijiaocn.com](https://www.lijiaocn.com)**，业余时间整理。
 
 <div style="display:flex;flex-direction:row;justify-content;space-between;flex-wrap:wrap">
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">

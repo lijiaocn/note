@@ -14,11 +14,11 @@
 <div style="text-align:left"><p>Go 语言深度入门手册，更好的理解 Go 语言，写出高效、规范、不易出错的代码，是时候更新对 Go 的认知了。</p></div>
 </div>
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
-<a href="../soft/index.html" title="小鸟笔记之软件手册"><h2>软件手册</h2></a>
+<a href="../soft/index.html" title="小鸟笔记之软件手册"><h2>软件使用</h2></a>
 <div style="text-align:left"><p>linux、envoy、openresty、nginx 的常用软件的使用方法，即是通俗易懂入门教程，也是提供工作效率的速查手册。</p></div>
 </div>
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
-<a href="../oper/index.html" title="小鸟笔记之运营手册"><h2>运营手册</h2></a>
+<a href="../oper/index.html" title="小鸟笔记之运营手册"><h2>运营技巧</h2></a>
 <div style="text-align:left"><p>运营手法、技巧和情报，耗费大量精力从各处搜集的运营技巧和情报，超级干货，非常开眼界。</p></div>
 </div>
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">

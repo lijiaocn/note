@@ -4,7 +4,7 @@
         <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
         <link>https://www.lijiaocn.com/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 01 Jan 2020 15:52:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Jan 2020 04:34:46 GMT</lastBuildDate>
         <atom:link href="https://www.lijiaocn.com/note/feed.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[李佶澳]]></author>
         <item>
@@ -12,6 +12,20 @@
             <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
             <link>https://www.lijiaocn.com/note/</link>
             <guid isPermaLink="true">https://www.lijiaocn.com/note/</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes 项目进展跟踪]]></title>
+            <description><![CDATA[（start at 2020-01-02 12:17:40）]]></description>
+            <link>https://www.lijiaocn.com/note/trace/k8s.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/k8s.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Docker 项目进展跟踪]]></title>
+            <description><![CDATA[start at 2020-01-02 12:21:54]]></description>
+            <link>https://www.lijiaocn.com/note/trace/docker.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/docker.html</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
         </item>
     </channel>

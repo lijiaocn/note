@@ -11,5 +11,4 @@
 
 ## 项目跟踪->最新进展
 
-* [kubernetes](./trace/k8s.md)
-* [docker](./trace/docker.md)
+* [kubernetes 基石项目](./trace/k8s.md)

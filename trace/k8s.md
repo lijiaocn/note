@@ -3,7 +3,44 @@
 
 （start at 2020-01-02 12:17:40）
 
-## CNCF
+## kubernetes
+
+* [kubernetes.io/blog](https://kubernetes.io/blog/)
+* [openshift](https://www.openshift.com/)
+
+## 容器技术
+
+* [cri-o](https://cri-o.io/)
+* [docker/docker-ce](https://github.com/docker/docker-ce/releases)
+* [opencontainers/runc](https://github.com/opencontainers/runc/releases)
+* [katacontainers](https://katacontainers.io/community/)
+* [gvisor](https://gvisor.dev/blog/)
+
+>[《docker/moby/docker-ce 与 docker-ee 的关系和获取方法》][2]
+
+## 能力扩展
+
+* [openkruise](https://openkruise.io/en-us/)
+* [sofastack](https://www.sofastack.tech/blog/)
+* [sofamosn](https://www.sofastack.tech/projects/sofa-mosn/overview/)
+* [istio](https://istio.io/blog/)
+
+## 网络方案
+
+* [containernetworking/cni](https://github.com/containernetworking/cni/releases)
+* [containernetworking/plugins](https://github.com/containernetworking/plugins/releases)
+* [coreos/flannel](https://github.com/coreos/flannel/releases)
+* [cilium](https://cilium.io/blog)
+* [calico](https://www.projectcalico.org/blog/)
+* [kube-ovn](https://github.com/alauda/kube-ovn)
+* [ovn-kubernetes](https://github.com/ovn-org/ovn-kubernetes)
+
+## 镜像管理
+
+* [harbor](https://goharbor.io/blogs/)
+* [quay](https://github.com/quay/quay)
+
+## CNCF 项目
 
 CNCF：[cncf blog](https://www.cncf.io/newsroom/blog/)
 
@@ -38,28 +75,6 @@ CNCF：[cncf blog](https://www.cncf.io/newsroom/blog/)
 * [fluentd](https://www.fluentd.org/blog/)
 * [jaeger](https://www.jaegertracing.io/)
 * [vitess](https://vitess.io/blog/)
-
-## kubernetes
-
-* [kubernetes.io/blog](https://kubernetes.io/blog/)
-
-## 容器技术
-
-* [cri-o](https://cri-o.io/)
-* [docker/docker-ce](https://github.com/docker/docker-ce/releases)
-* [opencontainers/runc](https://github.com/opencontainers/runc/releases)
-* [katacontainers](https://katacontainers.io/community/)
-* [gvisor](https://gvisor.dev/blog/)
-
->[《docker/moby/docker-ce 与 docker-ee 的关系和获取方法》][2]
-
-## 网络方案
-
-* [containernetworking/cni](https://github.com/containernetworking/cni/releases)
-* [containernetworking/plugins](https://github.com/containernetworking/plugins/releases)
-* [coreos/flannel](https://github.com/coreos/flannel/releases)
-* [cilium](https://cilium.io/blog)
-* [calico](https://www.projectcalico.org/blog/)
 
 ## 参考
 

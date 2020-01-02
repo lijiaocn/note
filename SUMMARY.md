@@ -10,3 +10,6 @@
 * [读书笔记](https://www.lijiaocn.com/book/)
 
 ## 项目跟踪->最新进展
+
+* [kubernetes](./trace/k8s.md)
+* [docker](./trace/docker.md)

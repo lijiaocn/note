@@ -1,6 +1,23 @@
 # Summary
 
-* [笔记说明](README.md)
+* [小鸟笔记说明](./README.md)
+
+### 云原生实践
+
+* [Kubernetes 生态系统](./trace/k8s.md)
+
+### 基础服务
+
+* [服务调用](./trace/rpc.md)
+* [网关网格](./trace/mesh.md)
+* [操作系统](./trace/os.md)
+* [消息队列](./trace/mq.md)
+* [高速缓存](./trace/cache.md)
+* [数据库系统](./trace/db.md)
+* [分布式存储](./trace/storage.md)
+* [日志系统](./trace/log.md)
+* [监控系统](./trace/monitor.md)
+* [负载均衡](./trace/lb.md)
 
 ## 系列手册->右侧更多
 
@@ -8,10 +25,3 @@
 * [软件使用](https://www.lijiaocn.com/soft/)
 * [运营技巧](https://www.lijiaocn.com/oper/)
 * [读书笔记](https://www.lijiaocn.com/book/)
-
-## 项目跟踪->最新进展
-
-* [kubernetes 基石项目](./trace/k8s.md)
-* 中间件系统（筹）
-* 数据库系统（筹）
-* 分布式存储（筹）

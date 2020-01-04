@@ -1,8 +1,10 @@
-# 笔记说明 by 李佶澳
+# 小鸟笔记说明 by 李佶澳
 
 小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。
 
 点击标题进入（持续完善中），**记住网址：[www.lijiaocn.com](https://www.lijiaocn.com)**，业余时间整理。
+
+## 系列手册
 
 <div style="display:flex;flex-direction:row;justify-content;space-between;flex-wrap:wrap">
 <div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
@@ -31,11 +33,18 @@
 </div>
 </div>
 
-## 常用工具的官方手册
+## 云原生实践
 
-* [Nginx 社区版的官方文档：nginx.org](http://nginx.org/)
-* [Nginx 商业版的官方文档：nginx.com](https://www.nginx.com/)
-* [官网：OpenResty](https://openresty.org/en/)
-* [项目：lua-nginx-module](https://github.com/openresty/lua-nginx-module)
-* [kubernetes ingress-nginx](https://kubernetes.github.io/ingress-nginx/)
-* [kubernetes apis](https://kubernetes.io/docs/reference/kubernetes-api/api-index/)
+* [Kubernetes 生态系统](./trace/k8s.md)
+
+## 基础服务
+
+* 操作系统
+* 消息队列
+* 高速缓存
+* 服务框架
+* 数据库
+* 分布式存储
+* 日志系统
+* 监控系统
+* 负载均衡

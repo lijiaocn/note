@@ -3,6 +3,7 @@
 
 * [ceph](https://ceph.io/community/blog/)
 * [glusterfs](https://www.gluster.org/)
+* [minio](https://min.io/)
 
 ## 参考
 

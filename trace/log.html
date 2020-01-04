@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Kubernetes 生态系统 · 小鸟笔记·李佶澳·影响一万人</title>
+        <title>日志系统 · 小鸟笔记·李佶澳·影响一万人</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -66,10 +66,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="rpc.html" />
+    <link rel="next" href="monitor.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="storage.html" />
     
 
     <link href="https://www.lijiaocn.com/note/feed.xml" title="小鸟笔记，实用干货手册" rel="alternate" type="application/rss+xml" />
@@ -198,7 +198,7 @@ var _hmt = _hmt || [];
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="k8s.html">
+        <li class="chapter " data-level="2.1" data-path="k8s.html">
             
                 <a href="k8s.html">
             
@@ -309,7 +309,7 @@ var _hmt = _hmt || [];
             
         </li>
     
-        <li class="chapter " data-level="3.8" data-path="log.html">
+        <li class="chapter active" data-level="3.8" data-path="log.html">
             
                 <a href="log.html">
             
@@ -453,7 +453,7 @@ var _hmt = _hmt || [];
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Kubernetes 生态系统</a>
+        <a href=".." >日志系统</a>
     </h1>
 </div>
 
@@ -506,91 +506,15 @@ var _hmt = _hmt || [];
 
                                 <!-- toc -->
 <ul>
-<li><a href="#kubernetes-&#x76F8;&#x5173;&#x9879;&#x76EE;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;">kubernetes &#x76F8;&#x5173;&#x9879;&#x76EE;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;</a><ul>
-<li><a href="#kubernetes">kubernetes</a></li>
-<li><a href="#&#x5BB9;&#x5668;&#x6280;&#x672F;">&#x5BB9;&#x5668;&#x6280;&#x672F;</a></li>
-<li><a href="#&#x80FD;&#x529B;&#x6269;&#x5C55;">&#x80FD;&#x529B;&#x6269;&#x5C55;</a></li>
-<li><a href="#&#x7F51;&#x7EDC;&#x65B9;&#x6848;">&#x7F51;&#x7EDC;&#x65B9;&#x6848;</a></li>
-<li><a href="#&#x955C;&#x50CF;&#x7BA1;&#x7406;">&#x955C;&#x50CF;&#x7BA1;&#x7406;</a></li>
-<li><a href="#cncf-&#x9879;&#x76EE;">CNCF &#x9879;&#x76EE;</a></li>
+<li><a href="#&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;">&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;</a><ul>
 <li><a href="#&#x53C2;&#x8003;">&#x53C2;&#x8003;</a></li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
-<h1 id="kubernetes-&#x76F8;&#x5173;&#x9879;&#x76EE;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;">kubernetes &#x76F8;&#x5173;&#x9879;&#x76EE;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;</h1>
-<h2 id="kubernetes">kubernetes</h2>
+<h1 id="&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;">&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x8FDB;&#x5C55;&#x8DDF;&#x8E2A;</h1>
 <ul>
-<li><a href="https://kubernetes.io/blog/" target="_blank">kubernetes.io/blog</a></li>
-<li><a href="https://www.openshift.com/" target="_blank">openshift</a></li>
-<li><a href="https://sealyun.com/" target="_blank">sealof</a></li>
-</ul>
-<h2 id="&#x5BB9;&#x5668;&#x6280;&#x672F;">&#x5BB9;&#x5668;&#x6280;&#x672F;</h2>
-<ul>
-<li><a href="https://cri-o.io/" target="_blank">cri-o</a></li>
-<li><a href="https://github.com/docker/docker-ce/releases" target="_blank">docker/docker-ce</a></li>
-<li><a href="https://github.com/opencontainers/runc/releases" target="_blank">opencontainers/runc</a></li>
-<li><a href="https://katacontainers.io/community/" target="_blank">katacontainers</a></li>
-<li><a href="https://gvisor.dev/blog/" target="_blank">gvisor</a></li>
-<li><a href="https://podman.io/blogs/" target="_blank">podman</a></li>
-</ul>
-<p><a href="https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2017/07/18/docker-commnuity.html" title="moby&#x3001;docker-ce&#x4E0E;docker-ee" target="_blank">&#x300A;docker/moby/docker-ce &#x4E0E; docker-ee &#x7684;&#x5173;&#x7CFB;&#x548C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x300B;</a></p>
-<h2 id="&#x80FD;&#x529B;&#x6269;&#x5C55;">&#x80FD;&#x529B;&#x6269;&#x5C55;</h2>
-<ul>
-<li><a href="https://openkruise.io/en-us/" target="_blank">openkruise</a></li>
-<li><a href="https://www.sofastack.tech/blog/" target="_blank">sofastack</a></li>
-<li><a href="https://www.sofastack.tech/projects/sofa-mosn/overview/" target="_blank">sofamosn</a></li>
-<li><a href="https://istio.io/blog/" target="_blank">istio</a></li>
-<li><a href="https://www.kubeflow.org/docs/about/kubeflow/" target="_blank">kubeflow</a></li>
-</ul>
-<h2 id="&#x7F51;&#x7EDC;&#x65B9;&#x6848;">&#x7F51;&#x7EDC;&#x65B9;&#x6848;</h2>
-<ul>
-<li><a href="https://github.com/containernetworking/cni/releases" target="_blank">containernetworking/cni</a></li>
-<li><a href="https://github.com/containernetworking/plugins/releases" target="_blank">containernetworking/plugins</a></li>
-<li><a href="https://github.com/coreos/flannel/releases" target="_blank">coreos/flannel</a></li>
-<li><a href="https://cilium.io/blog" target="_blank">cilium</a></li>
-<li><a href="https://www.projectcalico.org/blog/" target="_blank">calico</a></li>
-<li><a href="https://github.com/alauda/kube-ovn" target="_blank">kube-ovn</a></li>
-<li><a href="https://github.com/ovn-org/ovn-kubernetes" target="_blank">ovn-kubernetes</a></li>
-</ul>
-<h2 id="&#x955C;&#x50CF;&#x7BA1;&#x7406;">&#x955C;&#x50CF;&#x7BA1;&#x7406;</h2>
-<ul>
-<li><a href="https://goharbor.io/blogs/" target="_blank">harbor</a></li>
-<li><a href="https://github.com/quay/quay" target="_blank">quay</a></li>
-</ul>
-<h2 id="cncf-&#x9879;&#x76EE;">CNCF &#x9879;&#x76EE;</h2>
-<p>CNCF&#xFF1A;<a href="https://www.cncf.io/newsroom/blog/" target="_blank">cncf blog</a></p>
-<p>&#x6C99;&#x76D2;&#x9879;&#x76EE;&#xFF1A;</p>
-<ul>
-<li><a href="https://www.cncf.io/sandbox-projects/" target="_blank">sandbox-projects</a></li>
-</ul>
-<p>&#x5B75;&#x5316;&#x9879;&#x76EE;&#xFF1A;</p>
-<ul>
-<li><a href="https://medium.com/opentracing" target="_blank">opentracing</a></li>
-<li><a href="https://www.grpc.io/blog/" target="_blank">grpc</a></li>
-<li><a href="https://github.com/containernetworking" target="_blank">cni</a></li>
-<li><a href="https://github.com/theupdateframework/notary" target="_blank">notary</a></li>
-<li><a href="https://theupdateframework.netlify.com/" target="_blank">tuf</a></li>
-<li><a href="https://nats.io/blog/" target="_blank">nats</a></li>
-<li><a href="https://linkerd.io/blog/" target="_blank">linkerd</a></li>
-<li><a href="https://helm.sh/blog/" target="_blank">helm</a></li>
-<li><a href="https://blog.rook.io/" target="_blank">rook</a></li>
-<li><a href="https://goharbor.io/blogs/" target="_blank">harbor</a></li>
-<li><a href="https://github.com/etcd-io" target="_blank">etcd-io</a></li>
-<li><a href="https://cri-o.io/" target="_blank">cri-o</a></li>
-<li><a href="https://tikv.org/blog/" target="_blank">tikv</a></li>
-<li><a href="https://github.com/cloudevents/spec" target="_blank">cloudevents</a></li>
-</ul>
-<p>&#x6BD5;&#x4E1A;&#x9879;&#x76EE;&#xFF1A;</p>
-<ul>
-<li><a href="https://kubernetes.io/blog/" target="_blank">kubernetes</a></li>
-<li><a href="https://prometheus.io/blog/" target="_blank">prometheus</a></li>
-<li><a href="https://coredns.io/blog/" target="_blank">coredns</a></li>
-<li><a href="https://blog.envoyproxy.io/" target="_blank">envoy</a></li>
-<li><a href="https://containerd.io/" target="_blank">containerd</a></li>
-<li><a href="https://www.fluentd.org/blog/" target="_blank">fluentd</a></li>
-<li><a href="https://www.jaegertracing.io/" target="_blank">jaeger</a></li>
-<li><a href="https://vitess.io/blog/" target="_blank">vitess</a></li>
+<li><a href="https://www.elastic.co/blog/" target="_blank">elastic</a></li>
 </ul>
 <h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
 <ol>
@@ -657,12 +581,12 @@ var _hmt = _hmt || [];
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 小鸟笔记说明">
+                <a href="storage.html" class="navigation navigation-prev " aria-label="Previous page: 分布式存储">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="rpc.html" class="navigation navigation-next " aria-label="Next page: 服务调用">
+                <a href="monitor.html" class="navigation navigation-next " aria-label="Next page: 监控系统">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -673,7 +597,7 @@ var _hmt = _hmt || [];
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Kubernetes 生态系统","level":"2.1","depth":1,"next":{"title":"服务调用","level":"3.1","depth":1,"path":"trace/rpc.md","ref":"./trace/rpc.md","articles":[]},"previous":{"title":"小鸟笔记说明","level":"1.1","depth":1,"path":"README.md","ref":"./README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[{"name":"theme-lijiaocn","version":"git+https://github.com/lijiaocn/theme-lijiaocn.git"},"atoc","toggle-chapters","rss"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"atoc":{"addClass":true,"className":"atoc"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":[],"title":"小鸟笔记，实用干货手册","description":"小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。","author":"李佶澳","site_url":"https://www.lijiaocn.com/note/","feed_url":"https://www.lijiaocn.com/note/feed.xml"},"highlight":{},"theme-lijiaocn":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"lijiaocn@foxmail.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"language":"zh-hans","gitbook":">=3.0.0"},"file":{"path":"trace/k8s.md","mtime":"2020-01-04T07:42:13.223Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-04T08:58:13.485Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"日志系统","level":"3.8","depth":1,"next":{"title":"监控系统","level":"3.9","depth":1,"path":"trace/monitor.md","ref":"./trace/monitor.md","articles":[]},"previous":{"title":"分布式存储","level":"3.7","depth":1,"path":"trace/storage.md","ref":"./trace/storage.md","articles":[]},"dir":"ltr"},"config":{"plugins":[{"name":"theme-lijiaocn","version":"git+https://github.com/lijiaocn/theme-lijiaocn.git"},"atoc","toggle-chapters","rss"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"atoc":{"addClass":true,"className":"atoc"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":[],"title":"小鸟笔记，实用干货手册","description":"小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。","author":"李佶澳","site_url":"https://www.lijiaocn.com/note/","feed_url":"https://www.lijiaocn.com/note/feed.xml"},"highlight":{},"theme-lijiaocn":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"lijiaocn@foxmail.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"language":"zh-hans","gitbook":">=3.0.0"},"file":{"path":"trace/log.md","mtime":"2020-01-04T08:47:16.807Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-04T08:58:13.485Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

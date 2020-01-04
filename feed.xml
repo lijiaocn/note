@@ -4,11 +4,11 @@
         <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
         <link>https://www.lijiaocn.com/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 02 Jan 2020 16:30:29 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Jan 2020 08:58:17 GMT</lastBuildDate>
         <atom:link href="https://www.lijiaocn.com/note/feed.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[李佶澳]]></author>
         <item>
-            <title><![CDATA[笔记说明 by 李佶澳]]></title>
+            <title><![CDATA[小鸟笔记说明 by 李佶澳]]></title>
             <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
             <link>https://www.lijiaocn.com/note/</link>
             <guid isPermaLink="true">https://www.lijiaocn.com/note/</guid>
@@ -16,9 +16,63 @@
         </item>
         <item>
             <title><![CDATA[kubernetes 相关项目进展跟踪]]></title>
-            <description><![CDATA[（start at 2020-01-02 12:17:40）]]></description>
+            <description><![CDATA[《docker/moby/docker-ce 与 docker-ee 的关系和获取方法》]]></description>
             <link>https://www.lijiaocn.com/note/trace/k8s.html</link>
             <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/k8s.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[服务调用系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/rpc.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/rpc.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[网关网格系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/mesh.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/mesh.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[操作系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/os.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/os.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[高速缓存系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/cache.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/cache.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[数据库系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/db.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/db.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[分布式存储系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/storage.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/storage.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[日志系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/log.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/log.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[监控系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/monitor.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/monitor.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[负载均衡系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/lb.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/lb.html</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
         </item>
     </channel>

@@ -4,7 +4,7 @@
         <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
         <link>https://www.lijiaocn.com/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 04 Jan 2020 08:58:17 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Jan 2020 13:34:36 GMT</lastBuildDate>
         <atom:link href="https://www.lijiaocn.com/note/feed.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[李佶澳]]></author>
         <item>
@@ -40,7 +40,14 @@
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[消息队列系统进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/mq.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/mq.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[高速缓存系统进展跟踪]]></title>
+            <description><![CDATA[codis 和 twemproxy 是 proxy， 前者解决了 redis 无法水平扩展的问题，后者同时解决了 redis 和 memcached 无法水平扩展的问题。这两个项目都已经多年不更新。现在 redis 支持 cluster 模式，水平扩展不再是问题。]]></description>
             <link>https://www.lijiaocn.com/note/trace/cache.html</link>
             <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/cache.html</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>

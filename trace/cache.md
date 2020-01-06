@@ -28,10 +28,11 @@ Redis cluster 实现了两个功能：
 * redis cluster 非强一致性，数据异步同步，存在丢失的可能性（master 宕机/集群分裂等）
 * redis clsuter 支持 reshard，但是不支持自动 reshard @2020-01-04 21:00:36 
 * 通过手动 faileover 的方式升级
+* 支持 salve 自动迁移，保证每个 master 的副本数
 
 更多细节：
 
-* [Redis cluster tutorial](https://redis.io/topics/cluster-tutorial)
+* [Redis Cluster Tutorial](https://redis.io/topics/cluster-tutorial)
 * [Redis Cluster Specification](https://redis.io/topics/cluster-spec)
 
 ## 参考

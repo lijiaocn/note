@@ -9,7 +9,7 @@
 ## 基础服务
 
 * [高速缓存](./trace/cache.md)
-* [服务调用](./trace/rpc.md)
+* [服务框架](./trace/rpc.md)
 * [网关网格](./trace/mesh.md)
 * [操作系统](./trace/os.md)
 * [消息队列](./trace/mq.md)

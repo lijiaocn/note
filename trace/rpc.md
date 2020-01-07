@@ -10,6 +10,10 @@
 * [go-kit](https://github.com/go-kit/kit)
 * [bilibili/kratos](https://github.com/bilibili/kratos)
 
+非常明显，未来属于 [网格](./mesh.md)。
+
+不过服务框架的发展依然值得关注，植入有植入的优势，虽然未来属于非植入式的，但是很多问题和方法是通用的。
+
 主要问题：
 
 * 服务注册信息的维护：分布式、更新及时、一致性与分区容忍

@@ -4,12 +4,12 @@
         <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
         <link>https://www.lijiaocn.com/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 06 Jan 2020 05:49:48 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Jan 2020 14:38:23 GMT</lastBuildDate>
         <atom:link href="https://www.lijiaocn.com/note/feed.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[李佶澳]]></author>
         <item>
-            <title><![CDATA[小鸟笔记说明 by 李佶澳]]></title>
-            <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
+            <title><![CDATA[笔记说明by李佶澳]]></title>
+            <description><![CDATA[小鸟笔记是一系列精良实用的手册，是在现实需要的推动下生成并逐渐充实的。]]></description>
             <link>https://www.lijiaocn.com/note/</link>
             <guid isPermaLink="true">https://www.lijiaocn.com/note/</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
@@ -29,16 +29,23 @@
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[服务框架系统进展跟踪]]></title>
-            <description><![CDATA[主要问题：]]></description>
-            <link>https://www.lijiaocn.com/note/trace/rpc.html</link>
-            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/rpc.html</guid>
+            <title><![CDATA[网关网格系统进展跟踪]]></title>
+            <description><![CDATA[网关、网格与 服务框架 的区别在哪里：]]></description>
+            <link>https://www.lijiaocn.com/note/trace/mesh.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/mesh.html</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[网关网格系统进展跟踪]]></title>
-            <link>https://www.lijiaocn.com/note/trace/mesh.html</link>
-            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/mesh.html</guid>
+            <title><![CDATA[函数计算最新进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/func.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/func.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[服务框架系统进展跟踪]]></title>
+            <description><![CDATA[非常明显，未来属于 网格。]]></description>
+            <link>https://www.lijiaocn.com/note/trace/rpc.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/rpc.html</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
         </item>
         <item>

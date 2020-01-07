@@ -14,6 +14,8 @@ codis 和 twemproxy 是 proxy， 前者解决了 redis 无法水平扩展的问�
 
 ## redis cluster 的设计
 
+* [redis 大 key 检测](https://stackoverflow.com/questions/13673058/what-is-the-easiest-way-to-find-the-biggest-objects-in-redis)
+
 Redis cluster 实现了两个功能：
 
 1. 自动将数据分散到多个 redis 实例；

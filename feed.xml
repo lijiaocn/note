@@ -4,7 +4,7 @@
         <description><![CDATA[小鸟笔记是一系列精良实用的手册，这些手册 100% 源于实战，在现实需要的推动下生成完善。]]></description>
         <link>https://www.lijiaocn.com/note/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 07 Jan 2020 14:54:18 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 11 Jan 2020 06:08:59 GMT</lastBuildDate>
         <atom:link href="https://www.lijiaocn.com/note/feed.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[李佶澳]]></author>
         <item>
@@ -19,6 +19,18 @@
             <description><![CDATA[《docker/moby/docker-ce 与 docker-ee 的关系和获取方法》]]></description>
             <link>https://www.lijiaocn.com/note/trace/k8s.html</link>
             <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/k8s.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[SAAS 服务收集与进展跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/id.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/id.html</guid>
+            <dc:creator><![CDATA[李佶澳]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[应用配置中心项目跟踪]]></title>
+            <link>https://www.lijiaocn.com/note/trace/config.html</link>
+            <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/config.html</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>
         </item>
         <item>
@@ -62,6 +74,7 @@
         </item>
         <item>
             <title><![CDATA[数据库系统进展跟踪]]></title>
+            <description><![CDATA[关系型数据库：]]></description>
             <link>https://www.lijiaocn.com/note/trace/db.html</link>
             <guid isPermaLink="true">https://www.lijiaocn.com/note/trace/db.html</guid>
             <dc:creator><![CDATA[李佶澳]]></dc:creator>

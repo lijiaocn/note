@@ -9,6 +9,7 @@
 * [goa](https://goa.design/design/overview/)
 * [go-kit](https://github.com/go-kit/kit)
 * [bilibili/kratos](https://github.com/bilibili/kratos)
+* [nacos](https://nacos.io/zh-cn/)
 
 非常明显，未来属于 [网格](./mesh.md)。
 

@@ -39,6 +39,10 @@
 
 * [Kubernetes 生态系统](./trace/k8s.md)
 
+## SAAS 服务
+
+* [ID生成器](./trace/id.md)
+
 ## 基础服务
 
 * [高速缓存](./trace/cache.md)
@@ -51,3 +55,4 @@
 * [日志系统](./trace/log.md)
 * [监控系统](./trace/monitor.md)
 * [负载均衡](./trace/lb.md)
+

@@ -6,8 +6,13 @@
 
 * [Kubernetes 生态系统](./trace/k8s.md)
 
+## SAAS 服务
+
+* [ID生成器](./trace/id.md)
+
 ## 基础服务
 
+* [应用配置](./trace/config.md)
 * [高速缓存](./trace/cache.md)
 * [网关网格](./trace/mesh.md)
 * [函数服务](./trace/func.md)

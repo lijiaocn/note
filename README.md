@@ -4,7 +4,7 @@
 
 点击标题进入（持续完善中），**记住网址：[www.lijiaocn.com](https://www.lijiaocn.com)**，业余时间整理。
 
-另外，我正在找一种高效跟踪各种新进展的方法，相关工作会在这里体现。
+正在找一种高效跟踪新进展的方法，相关工作会在这里体现。
 
 ## 系列手册
 
@@ -34,25 +34,3 @@
 <div style="text-align:left"><p>水库论坛创始人欧成效（俗称“欧神”）的全部文章，欧成效亲手校对（包括被删除的文章）。</p></div>
 </div>
 </div>
-
-## 云原生实践
-
-* [Kubernetes 生态系统](./trace/k8s.md)
-
-## SAAS 服务
-
-* [ID生成器](./trace/id.md)
-
-## 基础服务
-
-* [高速缓存](./trace/cache.md)
-* [服务框架](./trace/rpc.md)
-* [网关网格](./trace/mesh.md)
-* [操作系统](./trace/os.md)
-* [消息队列](./trace/mq.md)
-* [数据库系统](./trace/db.md)
-* [分布式存储](./trace/storage.md)
-* [日志系统](./trace/log.md)
-* [监控系统](./trace/monitor.md)
-* [负载均衡](./trace/lb.md)
-

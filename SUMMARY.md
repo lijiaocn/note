@@ -4,8 +4,8 @@
 
 ## 系列手册->右侧更多
 
-* [编程手册](https://www.lijiaocn.com/prog/)
-* [软件使用](https://www.lijiaocn.com/soft/)
+* [编程语言](https://www.lijiaocn.com/prog/)
+* [常用软件](https://www.lijiaocn.com/soft/)
 * [运营技巧](https://www.lijiaocn.com/oper/)
 * [读书笔记](https://www.lijiaocn.com/book/)
 

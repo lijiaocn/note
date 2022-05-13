@@ -7,7 +7,7 @@
 * [编程语言](https://www.lijiaocn.com/prog/)
 * [常用软件](https://www.lijiaocn.com/soft/)
 * [运营技巧](https://www.lijiaocn.com/oper/)
-* [读书笔记](https://www.lijiaocn.com/book/)
+* [水库文集](https://www.lijiaocn.com/shuiku/)
 
 ## 云原生实践
 

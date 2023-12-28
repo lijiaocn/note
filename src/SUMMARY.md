@@ -1,10 +1,10 @@
 # Summary
 
-* [小鸟笔记说明](./README.md)
+* [说明](./README.md)
 
 ## 云原生实践
 
-* [Kubernetes 生态系统](./trace/k8s.md)
+* [Kubernetes 生态](./trace/k8s.md)
 
 ## SAAS 服务
 

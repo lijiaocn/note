@@ -1,0 +1,598 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>小鸟笔记</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div style="width:100%;text-align:center">
+                  <h2 style="color:#afa790">小鸟笔记</h2>
+                  <p style="font-weight:bold"><a style="color:lightgray;" href="https://www.lijiaocn.com">www.lijiaocn.com</a></p>
+                </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 小鸟笔记说明</a></li><li class="chapter-item expanded "><a href="trace/k8s.html"><strong aria-hidden="true">2.</strong> Kubernetes 生态系统</a></li><li class="chapter-item expanded "><a href="trace/id.html"><strong aria-hidden="true">3.</strong> ID生成器</a></li><li class="chapter-item expanded "><a href="trace/config.html"><strong aria-hidden="true">4.</strong> 应用配置</a></li><li class="chapter-item expanded "><a href="trace/cache.html"><strong aria-hidden="true">5.</strong> 高速缓存</a></li><li class="chapter-item expanded "><a href="trace/mesh.html"><strong aria-hidden="true">6.</strong> 网关网格</a></li><li class="chapter-item expanded "><a href="trace/func.html"><strong aria-hidden="true">7.</strong> 函数服务</a></li><li class="chapter-item expanded "><a href="trace/rpc.html"><strong aria-hidden="true">8.</strong> 服务框架</a></li><li class="chapter-item expanded "><a href="trace/os.html"><strong aria-hidden="true">9.</strong> 操作系统</a></li><li class="chapter-item expanded "><a href="trace/mq.html"><strong aria-hidden="true">10.</strong> 消息队列</a></li><li class="chapter-item expanded "><a href="trace/db.html"><strong aria-hidden="true">11.</strong> 数据库系统</a></li><li class="chapter-item expanded "><a href="trace/storage.html"><strong aria-hidden="true">12.</strong> 分布式存储</a></li><li class="chapter-item expanded "><a href="trace/log.html"><strong aria-hidden="true">13.</strong> 日志系统</a></li><li class="chapter-item expanded "><a href="trace/monitor.html"><strong aria-hidden="true">14.</strong> 监控系统</a></li><li class="chapter-item expanded "><a href="trace/lb.html"><strong aria-hidden="true">15.</strong> 负载均衡</a></li></ol>
+               <div style="width:100%;text-align:center">
+                  <img style="width:100%" src="https://www.lijiaocn.com/img/ercode/cur.jpg"/>
+               </div>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">小鸟笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div style="text-align:center;width:100%">
+                    <!--h1>顶部条幅广告</h1-->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8176866190626448"
+                     crossorigin="anonymous"></script>
+                     <!-- 顶部条幅广告 -->
+                    <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-8176866190626448"
+                     data-ad-slot="1000173679"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                     <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                     </script>
+                </div>
+
+                <div id="content" class="content">
+                    <main>
+                        <div style="display:flex;flex-direction:row;justify-content;space-between;flex-wrap:wrap">
+<div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
+<a href="../prog/index.html" title="小鸟笔记之编程手册"><h2 id="编程语言"><a class="header" href="#编程语言">编程语言</a></h2></a>
+<div style="text-align:left"><p>编程语法速查手册，python3、Go、C、lua、django 等常见编程语言的最常用方法，用于语法回忆和快速唤起编程手感。</p></div>
+</div>
+<div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
+<a href="../soft/index.html" title="小鸟笔记之软件手册"><h2 id="软件使用"><a class="header" href="#软件使用">软件使用</a></h2></a>
+<div style="text-align:left"><p>linux、envoy、openresty、nginx 的常用软件的使用方法，即是通俗易懂入门教程，也是提供工作效率的速查手册。</p></div>
+</div>
+<div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
+<a href="../oper/index.html" title="小鸟笔记之运营手册"><h2 id="运营技巧"><a class="header" href="#运营技巧">运营技巧</a></h2></a>
+<div style="text-align:left"><p>运营手法、技巧和情报，耗费大量精力从各处搜集的运营技巧和情报。</p></div>
+</div>
+<div style="text-align:center;padding:10px;flex-shrink:1;flex-grow:0;width:250px">
+<a href="../shuiku/index.html" title="小鸟笔记之水库文集"><h2 id="水库文集"><a class="header" href="#水库文集">水库文集</a></h2></a>
+<div style="text-align:left"><p>水库论坛创始人欧成效（俗称“欧神”）的全部文章，欧成效亲手校对（包括被删除的文章）。</p></div>
+</div>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="kubernetes-相关项目进展跟踪"><a class="header" href="#kubernetes-相关项目进展跟踪">kubernetes 相关项目进展跟踪</a></h1>
+<h2 id="kubernetes"><a class="header" href="#kubernetes">kubernetes</a></h2>
+<ul>
+<li><a href="https://kubernetes.io/blog/">kubernetes.io/blog</a></li>
+<li><a href="https://www.openshift.com/">openshift</a></li>
+<li><a href="https://sealyun.com/">sealof</a></li>
+</ul>
+<h2 id="容器技术"><a class="header" href="#容器技术">容器技术</a></h2>
+<ul>
+<li><a href="https://cri-o.io/">cri-o</a></li>
+<li><a href="https://github.com/docker/docker-ce/releases">docker/docker-ce</a></li>
+<li><a href="https://github.com/opencontainers/runc/releases">opencontainers/runc</a></li>
+<li><a href="https://katacontainers.io/community/">katacontainers</a></li>
+<li><a href="https://gvisor.dev/blog/">gvisor</a></li>
+<li><a href="https://podman.io/blogs/">podman</a></li>
+</ul>
+<p><a href="https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2017/07/18/docker-commnuity.html" title="moby、docker-ce与docker-ee">《docker/moby/docker-ce 与 docker-ee 的关系和获取方法》</a></p>
+<h2 id="能力扩展"><a class="header" href="#能力扩展">能力扩展</a></h2>
+<ul>
+<li><a href="https://openkruise.io/en-us/">openkruise</a></li>
+<li><a href="https://www.sofastack.tech/blog/">sofastack</a></li>
+<li><a href="https://www.sofastack.tech/projects/sofa-mosn/overview/">sofamosn</a></li>
+<li><a href="https://istio.io/blog/">istio</a></li>
+<li><a href="https://www.kubeflow.org/docs/about/kubeflow/">kubeflow</a></li>
+</ul>
+<h2 id="网络方案"><a class="header" href="#网络方案">网络方案</a></h2>
+<ul>
+<li><a href="https://github.com/containernetworking/cni/releases">containernetworking/cni</a></li>
+<li><a href="https://github.com/containernetworking/plugins/releases">containernetworking/plugins</a></li>
+<li><a href="https://github.com/coreos/flannel/releases">coreos/flannel</a></li>
+<li><a href="https://cilium.io/blog">cilium</a></li>
+<li><a href="https://www.projectcalico.org/blog/">calico</a></li>
+<li><a href="https://github.com/alauda/kube-ovn">kube-ovn</a></li>
+<li><a href="https://github.com/ovn-org/ovn-kubernetes">ovn-kubernetes</a></li>
+</ul>
+<h2 id="镜像管理"><a class="header" href="#镜像管理">镜像管理</a></h2>
+<ul>
+<li><a href="https://goharbor.io/blogs/">harbor</a></li>
+<li><a href="https://github.com/quay/quay">quay</a></li>
+</ul>
+<h2 id="cncf-项目"><a class="header" href="#cncf-项目">CNCF 项目</a></h2>
+<p>CNCF：<a href="https://www.cncf.io/newsroom/blog/">cncf blog</a></p>
+<p>沙盒项目：</p>
+<ul>
+<li><a href="https://www.cncf.io/sandbox-projects/">sandbox-projects</a></li>
+</ul>
+<p>孵化项目：</p>
+<ul>
+<li><a href="https://medium.com/opentracing">opentracing</a></li>
+<li><a href="https://www.grpc.io/blog/">grpc</a></li>
+<li><a href="https://github.com/containernetworking">cni</a></li>
+<li><a href="https://github.com/theupdateframework/notary">notary</a></li>
+<li><a href="https://theupdateframework.netlify.com/">tuf</a></li>
+<li><a href="https://nats.io/blog/">nats</a></li>
+<li><a href="https://linkerd.io/blog/">linkerd</a></li>
+<li><a href="https://helm.sh/blog/">helm</a></li>
+<li><a href="https://blog.rook.io/">rook</a></li>
+<li><a href="https://goharbor.io/blogs/">harbor</a></li>
+<li><a href="https://github.com/etcd-io">etcd-io</a></li>
+<li><a href="https://cri-o.io/">cri-o</a></li>
+<li><a href="https://tikv.org/blog/">tikv</a></li>
+<li><a href="https://github.com/cloudevents/spec">cloudevents</a></li>
+</ul>
+<p>毕业项目：</p>
+<ul>
+<li><a href="https://kubernetes.io/blog/">kubernetes</a></li>
+<li><a href="https://prometheus.io/blog/">prometheus</a></li>
+<li><a href="https://coredns.io/blog/">coredns</a></li>
+<li><a href="https://blog.envoyproxy.io/">envoy</a></li>
+<li><a href="https://containerd.io/">containerd</a></li>
+<li><a href="https://www.fluentd.org/blog/">fluentd</a></li>
+<li><a href="https://www.jaegertracing.io/">jaeger</a></li>
+<li><a href="https://vitess.io/blog/">vitess</a></li>
+</ul>
+<h2 id="参考"><a class="header" href="#参考">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="saas-服务收集与进展跟踪"><a class="header" href="#saas-服务收集与进展跟踪">SAAS 服务收集与进展跟踪</a></h1>
+<h2 id="发号器"><a class="header" href="#发号器">发号器</a></h2>
+<ul>
+<li><a href="https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md">百度 UidGenerator</a></li>
+</ul>
+<h2 id="参考-1"><a class="header" href="#参考-1">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="应用配置中心项目跟踪"><a class="header" href="#应用配置中心项目跟踪">应用配置中心项目跟踪</a></h1>
+<ul>
+<li><a href="https://help.aliyun.com/document_detail/59953.html?spm=a2c4g.11186623.6.542.5a0b63dejrv7tc">阿里云ACM</a></li>
+<li><a href="https://nacos.io/zh-cn/">nacos</a></li>
+</ul>
+<h2 id="参考-2"><a class="header" href="#参考-2">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="高速缓存系统进展跟踪"><a class="header" href="#高速缓存系统进展跟踪">高速缓存系统进展跟踪</a></h1>
+<h2 id="kv-缓存"><a class="header" href="#kv-缓存">kv 缓存</a></h2>
+<ul>
+<li><a href="https://redis.io/">redis</a></li>
+<li><a href="https://memcached.org/">memcached</a></li>
+<li><a href="https://github.com/CodisLabs/codis">codis</a></li>
+<li><a href="https://github.com/twitter/twemproxy">twitter/twemproxy</a></li>
+</ul>
+<p>codis 和 twemproxy 是 proxy， 前者解决了 redis 无法水平扩展的问题，后者同时解决了 redis 和 memcached 无法水平扩展的问题。这两个项目都已经多年不更新。现在 redis 支持 cluster 模式，水平扩展不再是问题。</p>
+<p>很明显，有了 kubernetes 之后，不再需要单独维护一个巨大无比的支持多租户的缓存集群，把缓存做成 operator 直接部署在用户侧即可，不仅实现简单，还实现了天然的隔离。如果担心用户应用影响 kubernetes 集群的稳定性，可以为缓存等基础服务单独准备一个 kubernetes 集群，实现基础服务与业务系统的分离。</p>
+<h2 id="redis-cluster-的设计"><a class="header" href="#redis-cluster-的设计">redis cluster 的设计</a></h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/13673058/what-is-the-easiest-way-to-find-the-biggest-objects-in-redis">redis 大 key 检测</a></li>
+</ul>
+<p>Redis cluster 实现了两个功能：</p>
+<ol>
+<li>自动将数据分散到多个 redis 实例；</li>
+<li>部分 redis 实例故障时，整体依旧可用。</li>
+</ol>
+<p>通过以下方式实现上述功能：</p>
+<ul>
+<li>redis 实例启动两个 tcp 端口，6379 服务于客户端，6379+10000 用于 redis 间通信</li>
+<li>key 在多个 redis 实例间分配，hash slot 容量为 16384（2^14），哈希算法 CRC16 </li>
+<li>多 key 操作的目标必须在同一个 slot 中，写入 key 时用 hashtag 保证，{hashtag}key</li>
+<li>每个 redis 实例通过 master-slave 的方式保证高可用</li>
+<li>redis cluster 非强一致性，数据异步同步，存在丢失的可能性（master 宕机/集群分裂等）</li>
+<li>redis clsuter 支持 reshard，但是不支持自动 reshard @2020-01-04 21:00:36 </li>
+<li>通过手动 faileover 的方式升级</li>
+<li>支持 salve 自动迁移，保证每个 master 的副本数</li>
+</ul>
+<p>更多细节：</p>
+<ul>
+<li><a href="https://redis.io/topics/cluster-tutorial">Redis Cluster Tutorial</a></li>
+<li><a href="https://redis.io/topics/cluster-spec">Redis Cluster Specification</a></li>
+</ul>
+<h2 id="参考-3"><a class="header" href="#参考-3">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="网关网格系统进展跟踪"><a class="header" href="#网关网格系统进展跟踪">网关网格系统进展跟踪</a></h1>
+<ul>
+<li><a href="https://istio.io/news/">istio</a></li>
+<li><a href="https://linkerd.io/">linkerd</a></li>
+<li><a href="https://gloo.solo.io/">gloo</a></li>
+<li><a href="https://konghq.com/">kong</a></li>
+</ul>
+<p>网关、网格与 <a href="trace/./rpc.html">服务框架</a> 的区别在哪里：</p>
+<ul>
+<li>网关网格是语言无关、非植入式</li>
+<li>服务框架是语言相关、植入式</li>
+</ul>
+<p>服务框架基本上来说就是一个提供服务地址发现的「注册中心」，通过用户端植入的 sdk 实现更丰富的功能。植入带来耦合，维护和适配的成本非常高。通过网关或者网格实现微服务的治理是正确的发展方向。</p>
+<h2 id="实践分享"><a class="header" href="#实践分享">实践分享</a></h2>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/VA1a5TtkZCbcH0Q0eM3mVg">网易严选ServiceMesh实践</a></li>
+</ul>
+<p>在40并发、1600RPS的情况下，cNginx的延时增加0.4ms（相比直连），Envoy（社区版本，优化前）Client Sidecar模式延时增加0.6ms（相比直连）。</p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/klCi5T6ncbK8edQLUI91Cg">酷家乐的 Istio 与 Knative 实践</a></li>
+</ul>
+<p>istio  与 knative  的实践，knative 是 serviceless，当前需要  Ambassador、gloo 和 istio 三者之一作为 ingress。</p>
+<h2 id="参考-4"><a class="header" href="#参考-4">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="函数计算最新进展跟踪"><a class="header" href="#函数计算最新进展跟踪">函数计算最新进展跟踪</a></h1>
+<ul>
+<li><a href="https://knative.dev/blog/">knative</a></li>
+<li><a href="https://kubeless.io/">kubeless</a></li>
+<li><a href="https://fission.io/">fission</a></li>
+</ul>
+<h2 id="参考-5"><a class="header" href="#参考-5">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="服务框架系统进展跟踪"><a class="header" href="#服务框架系统进展跟踪">服务框架系统进展跟踪</a></h1>
+<ul>
+<li><a href="https://www.sofastack.tech/">sofastack</a></li>
+<li><a href="https://spring.io/">spring cloud</a></li>
+<li><a href="https://dubbo.apache.org/en-us/">dubbo</a></li>
+<li><a href="https://grpc.io/">grpc</a></li>
+<li><a href="https://github.com/alibaba/Sentinel">sentinel</a></li>
+<li><a href="https://goa.design/design/overview/">goa</a></li>
+<li><a href="https://github.com/go-kit/kit">go-kit</a></li>
+<li><a href="https://github.com/bilibili/kratos">bilibili/kratos</a></li>
+<li><a href="https://nacos.io/zh-cn/">nacos</a></li>
+</ul>
+<p>非常明显，未来属于 <a href="trace/./mesh.html">网格</a>。</p>
+<p>不过服务框架的发展依然值得关注，植入有植入的优势，虽然未来属于非植入式的，但是很多问题和方法是通用的。</p>
+<p>主要问题：</p>
+<ul>
+<li>服务注册信息的维护：分布式、更新及时、一致性与分区容忍</li>
+<li>负载均衡策略</li>
+<li>熔断限流策略</li>
+<li>认证、牵引的更多策略</li>
+<li>状态测度</li>
+</ul>
+<h2 id="bilibilikratos"><a class="header" href="#bilibilikratos">bilibili/kratos</a></h2>
+<p><a href="https://github.com/bilibili/kratos">kratos</a> 是 bilibili 研发并使用的服务框架系统。</p>
+<p>公开分享资料：<a href="https://mp.weixin.qq.com/s/OAjcQdQxQzTRRv6q52JPNg">B站在微服务治理中如何探索与实践？</a></p>
+<ul>
+<li>分布式 discovery 组件负责服务信息的维护</li>
+<li>植入客户端，客户端执行负载均衡</li>
+<li>熔断限流当前不是全局的，疑似在客户端实现</li>
+</ul>
+<p>限流算法进化：</p>
+<ul>
+<li>单机令牌桶算法：常规限速，配置不灵活</li>
+<li>Hystrix 熔断算法：当请求失败比率达到一定阈值之后，熔断器开启，无差别熔断</li>
+<li>Google SRE 弹性熔断算法：弹性熔断是根据成功率进行调整的，当成功率越高的时候，被熔断的概率就越小 </li>
+<li>基于 BBR 算法的自适应限流：用 CPU\IOPS 计算出最大承载量，超出的请求入队等待</li>
+</ul>
+<h2 id="参考-6"><a class="header" href="#参考-6">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="操作系统进展跟踪"><a class="header" href="#操作系统进展跟踪">操作系统进展跟踪</a></h1>
+<h1 id="kernel"><a class="header" href="#kernel">kernel</a></h1>
+<ul>
+<li><a href="https://www.kernel.org/category/releases.html">kernel/release</a></li>
+<li><a href="https://www.kernel.org/doc/html/latest/">kernel/documentation</a></li>
+<li><a href="http://www.linux-tutorial.info/">linux/tutorial</a></li>
+<li><a href="https://lwn.net/">lwn.net</a></li>
+</ul>
+<h2 id="发行版"><a class="header" href="#发行版">发行版</a></h2>
+<ul>
+<li><a href="https://blog.centos.org/">CentOS Blog</a></li>
+<li><a href="https://www.redhat.com/en/blog">RedHat Blog</a></li>
+</ul>
+<h2 id="参考-7"><a class="header" href="#参考-7">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="消息队列系统进展跟踪"><a class="header" href="#消息队列系统进展跟踪">消息队列系统进展跟踪</a></h1>
+<h2 id="消息队列"><a class="header" href="#消息队列">消息队列</a></h2>
+<ul>
+<li><a href="https://www.rabbitmq.com/blog/">rabbitmq/blog</a></li>
+<li><a href="https://kafka.apache.org/">kafka</a></li>
+<li><a href="https://activemq.apache.org/">activemq</a></li>
+</ul>
+<h2 id="参考-8"><a class="header" href="#参考-8">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="数据库系统进展跟踪"><a class="header" href="#数据库系统进展跟踪">数据库系统进展跟踪</a></h1>
+<p><strong>关系型数据库</strong>：</p>
+<ul>
+<li><a href="https://www.cockroachlabs.com/blog/">cockroach db</a></li>
+<li><a href="https://pingcap.com/blog-cn/">tidb</a></li>
+<li><a href="https://www.mysql.com/">mysql</a></li>
+<li><a href="https://mariadb.org/">mariadb</a></li>
+<li><a href="https://www.postgresql.org/">postgresql</a></li>
+</ul>
+<p><strong>图数据库</strong>: </p>
+<ul>
+<li><a href="https://dgraph.io/">Dgraph</a></li>
+</ul>
+<h2 id="参考-9"><a class="header" href="#参考-9">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="分布式存储系统进展跟踪"><a class="header" href="#分布式存储系统进展跟踪">分布式存储系统进展跟踪</a></h1>
+<ul>
+<li><a href="https://ceph.io/community/blog/">ceph</a></li>
+<li><a href="https://www.gluster.org/">glusterfs</a></li>
+<li><a href="https://min.io/">minio</a></li>
+</ul>
+<h2 id="参考-10"><a class="header" href="#参考-10">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="日志系统进展跟踪"><a class="header" href="#日志系统进展跟踪">日志系统进展跟踪</a></h1>
+<ul>
+<li><a href="https://www.elastic.co/blog/">elastic</a></li>
+</ul>
+<h2 id="参考-11"><a class="header" href="#参考-11">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="监控系统进展跟踪"><a class="header" href="#监控系统进展跟踪">监控系统进展跟踪</a></h1>
+<ul>
+<li><a href="https://prometheus.io/blog/">prometheus</a></li>
+<li><a href="https://thanos.io/getting-started.md/">thanso</a>：prometheus 数据转存</li>
+</ul>
+<h2 id="参考-12"><a class="header" href="#参考-12">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><!-- toc -->
+<h1 id="负载均衡系统进展跟踪"><a class="header" href="#负载均衡系统进展跟踪">负载均衡系统进展跟踪</a></h1>
+<ul>
+<li><a href="http://nginx.org/">nginx</a></li>
+<li><a href="https://blog.envoyproxy.io/">envoy</a></li>
+</ul>
+<h2 id="参考-13"><a class="header" href="#参考-13">参考</a></h2>
+<ol>
+<li><a href="https://www.lijiaocn.com" title="李佶澳的博客">李佶澳的博客</a></li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+                <div style="text-align:center;width:100%">
+                    <!--h1>底部相关广告</h1-->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8176866190626448"
+                         crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-format="autorelaxed"
+                         data-ad-client="ca-pub-8176866190626448"
+                         data-ad-slot="6443696990"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>

@@ -90,7 +90,7 @@
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <div style="width:100%;text-align:center">
-                  <h2 style="color:#afa790">小鸟笔记</h2>
+                  <h2 style="color:#afa790">关注方向</h2>
                   <p style="font-weight:bold"><a style="color:lightgray;" href="https://www.lijiaocn.com">www.lijiaocn.com</a></p>
                 </div>
                 <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 小鸟笔记说明</a></li><li class="chapter-item expanded "><a href="trace/k8s.html"><strong aria-hidden="true">2.</strong> Kubernetes 生态系统</a></li><li class="chapter-item expanded "><a href="trace/id.html"><strong aria-hidden="true">3.</strong> ID生成器</a></li><li class="chapter-item expanded "><a href="trace/config.html"><strong aria-hidden="true">4.</strong> 应用配置</a></li><li class="chapter-item expanded "><a href="trace/cache.html"><strong aria-hidden="true">5.</strong> 高速缓存</a></li><li class="chapter-item expanded "><a href="trace/mesh.html"><strong aria-hidden="true">6.</strong> 网关网格</a></li><li class="chapter-item expanded "><a href="trace/func.html"><strong aria-hidden="true">7.</strong> 函数服务</a></li><li class="chapter-item expanded "><a href="trace/rpc.html"><strong aria-hidden="true">8.</strong> 服务框架</a></li><li class="chapter-item expanded "><a href="trace/os.html"><strong aria-hidden="true">9.</strong> 操作系统</a></li><li class="chapter-item expanded "><a href="trace/mq.html"><strong aria-hidden="true">10.</strong> 消息队列</a></li><li class="chapter-item expanded "><a href="trace/db.html"><strong aria-hidden="true">11.</strong> 数据库系统</a></li><li class="chapter-item expanded "><a href="trace/storage.html"><strong aria-hidden="true">12.</strong> 分布式存储</a></li><li class="chapter-item expanded "><a href="trace/log.html"><strong aria-hidden="true">13.</strong> 日志系统</a></li><li class="chapter-item expanded "><a href="trace/monitor.html"><strong aria-hidden="true">14.</strong> 监控系统</a></li><li class="chapter-item expanded "><a href="trace/lb.html"><strong aria-hidden="true">15.</strong> 负载均衡</a></li></ol>
@@ -230,6 +230,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
